@@ -1,11 +1,11 @@
 from django.shortcuts import render
-from .models import integrantes
+from .models import Integrantes
 from django.http import HttpResponse
 from django.template import Template,Context,loader
 
 # Create your views here.
 def integrantes(request):
-    persona=integrantes(nombre="Leandro ", apellido="DiPalma ", documento="28711888", ocupacion="Administrativo")
+    persona=Integrantes(nombre="Leandro ", apellido="DiPalma ", documento="28711888", ocupacion="Administrativo")
     persona.save()
     cadena_texto=persona
     return HttpResponse(cadena_texto)
