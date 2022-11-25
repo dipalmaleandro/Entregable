@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterField(
-            model_name='integrantes',
+            model_name='Integrantes1',
             name='nombre',
             field=models.CharField(max_length=250),
         ),
